@@ -3,11 +3,10 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Books from './components/Books';
 import Categories from './components/Categories';
-import Booklists from './components/Booklists';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
+import Books from './components/Books';
 
 function App() {
   return (
@@ -15,10 +14,7 @@ function App() {
       <div className="container border shadow mt-5">
         <Navbar />
         <Switch>
-          <Route path="/booklists">
-            <Booklists />
-          </Route>
-          <Route path="/books">
+          <Route exact path="/">
             <Books />
           </Route>
           <Route path="/categories">
