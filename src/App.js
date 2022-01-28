@@ -1,18 +1,33 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar';
-import Categories from './redux/categories/categories';
-import BookList from './components/bookList';
-import './index.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Books from './components/Books';
+import Categories from './components/Categories';
+import Booklists from './components/Booklists';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
 
-const App = () => (
-  <>
-    <Navbar />
-    <Routes>
-      <Route exact path="/" element={<BookList />} />
-      <Route path="/categories" element={<Categories />} />
-    </Routes>
-  </>
-);
+function App() {
+  return (
+    <Router>
+      <div className="container border shadow mt-5">
+        <Navbar />
+        <Switch>
+          <Route path="/booklists">
+            <Booklists />
+          </Route>
+          <Route path="/books">
+            <Books />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
 
 export default App;
