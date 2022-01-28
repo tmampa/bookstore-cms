@@ -3,7 +3,7 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Books from './components/Books';
+import Books from './components/Book';
 import Categories from './components/Categories';
 import Navbar from './components/Navbar';
 
