@@ -1,12 +1,10 @@
 import React from 'react';
+import Book from './Book';
 
 const Books = () => (
   <div>
-    <h3>Book list</h3>
-    <button type="button">Remove book</button>
-    <div>
-      <input type="text" placeholder="Add a book" />
-    </div>
+    <h3>Book List</h3>
+    <Book />
   </div>
 );
 
