@@ -9,7 +9,7 @@ export default function AddBooks() {
   const [author, setAuthor] = useState('');
 
   const addNewBook = (e) => {
-    if (title && author ) {
+    if (title && author) {
       e.preventDefault();
       const data = {
         id: books.length + 1,
@@ -20,13 +20,13 @@ export default function AddBooks() {
       setTitle('');
       setAuthor('');
     }
-  }
+  };
   return (
     <div>
       <form>
-        <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder='Add new book' />
-        <input value={author} onChange={(e) => setAuthor(e.target.value)} placeholder='Author' />
+        <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Add new book" />
+        <input value={author} onChange={(e) => setAuthor(e.target.value)} placeholder="Author" />
       </form>
     </div>
-  )
+  );
 }
