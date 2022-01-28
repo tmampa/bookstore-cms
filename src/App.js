@@ -3,22 +3,25 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Books from './components/Books';
 import Categories from './components/Categories';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
+import Books from './components/Books';
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Books />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-      </Switch>
+      <div className="container border shadow mt-5">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Books />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }

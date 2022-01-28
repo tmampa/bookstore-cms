@@ -1,12 +1,11 @@
 import React from 'react';
-import Book from './Book';
-import CreateNewBook from './CreateNewBook';
+import Addbooks from './Addbooks';
+import Booklists from './Booklists';
 
 const Books = () => (
-  <div>
-    <h3>Book List</h3>
-    <Book />
-    <CreateNewBook />
+  <div className="pt-5 container">
+    <Booklists />
+    <Addbooks />
   </div>
 );
 
