@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addBooks } from "../../redux/books/books";
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBooks } from '../../redux/books/books';
 
 export default BookList = () => {
   const dispatch = useDispatch();
-  const [title, setTitle] = useState("");
-  const [author, setAuthor] = useState("");
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
 
   const addBookToStore = (e) => {
     e.preventDefault();
@@ -17,8 +17,8 @@ export default BookList = () => {
     };
 
     dispatch(addBooks(newBook));
-    setTitle("");
-    setAuthor("");
+    setTitle('');
+    setAuthor('');
   };
 
   return (
@@ -42,4 +42,4 @@ export default BookList = () => {
       </button>
     </form>
   );
-}
+};
