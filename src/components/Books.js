@@ -1,15 +1,13 @@
-import React from "react";
+import React from 'react';
 
-const Books = () => {
-  return (
+const Books = () => (
+  <div>
+    <h3>Book list</h3>
+    <button type="button">Remove book</button>
     <div>
-      <h3>Book list</h3>
-      <button>Remove book</button>
-      <div>
-        <input type="text" placeholder="Add a book" />
-      </div>
+      <input type="text" placeholder="Add a book" />
     </div>
-  );
-}
+  </div>
+);
 
 export default Books;
