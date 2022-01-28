@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { removeBooks } from '../redux/books/books';
 
 const SingleBook = ({ book }) => {
@@ -23,4 +23,13 @@ const SingleBook = ({ book }) => {
     </div>
   );
 };
+
+SingleBook.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }).isRequired,
+};
+
 export default SingleBook;
