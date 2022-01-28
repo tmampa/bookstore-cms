@@ -1,5 +1,3 @@
-// books.js
-import { combineReducers } from 'redux';
 // Actions
 export const addBooks = (book) => ({
   type: 'ADD_BOOKS',
@@ -10,7 +8,7 @@ export const removeBooks = (id) => ({
   payload: id,
 });
 // Reducers
-export const booksReducers = (state = [], action) => {
+export const booksReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_BOOKS':
       return [...state, action.payload];
@@ -20,7 +18,3 @@ export const booksReducers = (state = [], action) => {
       return state;
   }
 };
-// Store
-export const rootReducers = combineReducers({
-  books: booksReducers,
-});
