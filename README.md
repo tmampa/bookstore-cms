@@ -17,7 +17,7 @@
 
 ## 🖇️ LiveLink
 
-- [Coming soon]()
+- [Bookstore CMS](https://bookstorecms-react.netlify.app/)
 
 ## 🛫 Getting Started
 
