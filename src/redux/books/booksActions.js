@@ -1,5 +1,3 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-unused-vars */
 import { addBook, getBooks, removeBook } from './books';
 
 const URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/jYLpfFFNrGPhM35GyKxf/books';
