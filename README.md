@@ -5,7 +5,7 @@
 > - Add a book.
 > - Remove a selected book.
 
-![App image]()
+![App image](./src/bookstore.png)
 
 ## 🏗️ Built With
 
