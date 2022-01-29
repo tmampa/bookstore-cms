@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Math Magicians
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Bookstore website is built with react and redux, feature of the website includes:
+> - Display a list of books.
+> - Add a book.
+> - Remove a selected book.
 
-## Available Scripts
+![App image]()
 
-In the project directory, you can run:
+## 🏗️ Built With
 
-### `npm start`
+- HTML
+- CSS
+- JavaScript
+- React JS
+- React Router
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖇️ LiveLink
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Coming soon]()
 
-### `npm test`
+## 🛫 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running, follow the steps in Setup below.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Basic knowledge of HTML, CSS, and JavaScript.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
+[Download the ZIP from this location](https://github.com/tmampa/bookstore-cms), or run the following [git](https://github.com/tmampa/bookstore-cms.git) command to clone the files to your machine:
 
-### `npm run eject`
+```bash
+git clone https://github.com/tmampa/bookstore-cms.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Once the files are on your machine, open the _Leaderboard_ folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Installation & Set Up
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Install Node Modules
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```sh
+   npm install
+   ```
 
-## Learn More
+2. Start the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```sh
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
-### Code Splitting
+## 🚀 Building and Running for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Generate a full static production build
 
-### Analyzing the Bundle Size
+   ```sh
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧪 Running Tests with Jest
 
-### Making a Progressive Web App
+1. Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```sh
+   npm run test
+   ```
 
-### Advanced Configuration
+### 💉 Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The following tools help make easier to work with sample code.
 
-### Deployment
+- [git](https://git-scm.com/downloads): A tool for managing source code
+- [Visual Studio Code](https://code.visualstudio.com/): A source code editor
+- [NVM](https://github.com/nvm-sh/nvm)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 👨🏾‍💻 Author
 
-### `npm run build` fails to minify
+👤 **Tshephang Mampa**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- GitHub: [tmampa](https://github.com/tmampa)
+- LinkedIn: [Tshephang Mampa](https://linkedin.com/tshephangmampa)
+- Twitter: [Tshephangm\_](https://twitter.com/tshephangm_)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## ❤️ Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thank you for Microverse for providing the required materials
+
+## 📝 License
