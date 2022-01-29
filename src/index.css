@@ -1,8 +1,4 @@
 body {
-  background-color: aliceblue;
-}
-
-.active {
-  font-weight: bolder;
-  color: #0d6efd;
+  margin: 0;
+  padding: 0;
 }

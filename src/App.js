@@ -1,28 +1,26 @@
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
+  BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
-import Categories from './components/Categories';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import Books from './components/Books';
+import { Provider } from 'react-redux';
+import store from './redux/configureStore';
+import './App.css';
+import Header from './components/Header';
+import Books from './components/pages/Books';
+import Categories from './components/pages/Categories';
 
 function App() {
   return (
-    <Router>
-      <div className="container border shadow mt-5">
-        <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Books />
-          </Route>
-          <Route path="/categories">
-            <Categories />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <main className="container">
+          <Header />
+          <Routes>
+            <Route path="/" exact element={<Books />} />
+            <Route path="/categories" exact element={<Categories />} />
+          </Routes>
+        </main>
+      </Router>
+    </Provider>
   );
 }
 
